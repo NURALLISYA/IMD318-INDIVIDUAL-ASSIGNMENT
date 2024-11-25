@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Allisya's Gallery</title>
+    <style>
+        body {
+            background-color: #e9d5d1; 
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Menu styling with border */
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        table td {
+            border: 2px solid #dbc4c0;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        table a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        table a:hover {
+            background-color: #dbc4c0;
+            color: black;
+        }
+
+        /* Style for images and videos in horizontal row */
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        img, video {
+            width: 300px;
+            height: auto;
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Caption styling for image map */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .image-container .caption {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Show caption on area click */
+        .image-container:focus-within .caption {
+            display: block;
+        }
+
+        /* Dotted outline for the title */
+        .title-box {
+            outline: 3px dotted #cd6060;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        /* Background color for section below */
+        .bottom-section {
+            background-color: #dbc4c0;
+        }
+
+/* Footer */
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #dbc4c0;
+            color: black;
+            font-weight: bold;
+
+    </style>
+</head>
+<body>
+    <!-- Menu Table -->
+    <table>
+        <tr>
+            <td><a href="index.html">HOME</a></td>
+            <td><a href="biodata.html">BIODATA</a></td>
+            <td><a href="experience.html">EXPERIENCE</a></td>
+            <td><a href="education.html">EDUCATION</a></td>
+            <td><a href="family.html">FAMILY</a></td>
+            <td><a href="gallery.html">GALLERY</a></td>
+            <td><a href="dreamplace.html">DREAM PLACE</a></td>
+        </tr>
+    </table>
+
+    <! Section with original background >
+    <center>
+        <div class="title-box">
+            <h1 style="font-size:200%;">MY UNFORGETTABLE MEMORIES</h1>
+        </div>
+        <p>Click on the images and videos for the caption !</p>
+    </center>
+
+    <!-- Section with new background -->
+    <div class="bottom-section">
+        <center>
+            <!-- Media Container -->
+            <div class="media-container">
+                <!-- Highschool Friend -->
+                <div class="image-container">
+                    <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/IMG_20220211_074657_131.JPG" alt="Highschool Memories" usemap="#highschoolmap">
+                    <map name="highschoolmap">
+                        <area shape="rect" coords="0,0,300,200" href="#" tabindex="1">
+                    </map>
+                    <div class="caption">Highschool Friend - Memorable moments!</div>
+                </div>
+
+                <!-- Family -->
+                <div class="image-container">
+                    <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/6185893336477449838.jpg" alt="Family Memories" usemap="#familymap">
+                    <map name="familymap">
+                        <area shape="rect" coords="0,0,300,200" href="#" tabindex="2">
+                    </map>
+                    <div class="caption">Family - Forever in my heart!</div>
+                </div>
+
+                <!-- Internship Memories -->
+                <div class="image-container">
+                    <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/IMG-20240913-WA0056(1).jpg" alt="Internship Memories" usemap="#internshipmap">
+                    <map name="internshipmap">
+                        <area shape="rect" coords="0,0,300,200" href="#" tabindex="3">
+                    </map>
+                    <div class="caption">Internship Memories - A valuable experience!</div>
+                </div>
+
+                <!-- University Journey -->
+                <div class="image-container">
+                    <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/IMG_20241112_181214_142.jpg" alt="University Journey" usemap="#universitymap">
+                    <map name="universitymap">
+                        <area shape="rect" coords="0,0,300,200" href="#" tabindex="4">
+                    </map>
+                    <div class="caption">University Journey - A proud achievement!</div>
+                </div>
+
+                <!-- Video Memories -->
+                <div class="image-container">
+                    <video controls autoplay>
+                        <source src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/video6194991592877593472.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="caption">Video Memories 1: Our presentation last semester</div>
+                </div>
+
+                <!-- Hostel Life -->
+                <div class="image-container">
+                    <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/IMG_20220211_072257_425.jpg" alt="Hostel Life" usemap="#hostelmap">
+                    <map name="hostelmap">
+                        <area shape="rect" coords="0,0,300,200" href="#" tabindex="4">
+                    </map>
+                    <div class="caption">Hostel Life - My second family !</div>
+                </div>
+            </div>
+        </center>
+    </div>
+
+<center>
+    <footer>&copy; IMD318 ASSIGNMENT 2024</footer>
+</center>
+
+</body>
+</html>

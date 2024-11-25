@@ -1,0 +1,233 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Allisya's Biodata</title>
+    <style>
+        /* Page background color */
+        body {
+            font: serif;
+            background-color: #e9d5d1; 
+            text-align: center;
+            padding: 20px;
+            margin: 0; 
+        }
+
+        /* Menu styling with border */
+        table {
+            width: 100%;
+            margin: 0; 
+            border-spacing: 0; 
+        }
+
+        table td {
+            border: 2px solid #dbc4c0;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 0;  
+        }
+
+        table a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        table a:hover {
+            background-color: #dbc4c0;
+            color: black;
+        }
+
+        /* Styling sections */
+        .sections-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        /* Profile image styling */
+        .profile-pic {
+            float: left;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        /* Table styling */
+        table.details {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table.details th, table.details td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table.details th {
+            background-color: #dbc4c0;
+            color: black;
+        }
+
+        /* Favorites styling */
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Image gallery styling */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 45%;
+            max-width: 250px;
+            border-radius: 10px;
+            border: 5px solid #a09898;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #dbc4c0;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <table>
+            <tr>
+                <td><a href="index.html">HOME</a></td>
+                <td><a href="biodata.html">BIODATA</a></td>
+                <td><a href="experience.html">EXPERIENCE</a></td>
+                <td><a href="education.html">EDUCATION</a></td>
+                <td><a href="family.html">FAMILY</a></td>
+                <td><a href="gallery.html">GALLERY</a></td>
+                <td><a href="dreamplace.html">DREAM PLACE</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Introduction, Details, and Favorites in Grid Layout -->
+    <div class="sections-container">
+        <!-- Introduction Section -->
+        <div id="introduction" class="section">
+            <i><h2>Introduction</h2></i>
+            <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/6143330897768858146.jpg" alt="Your Photo" class="profile-pic">
+            <p>Hello! I’m Allisya, a final-semester student in Information Management, set to graduate in 2025. I study at UiTM Kedah, which is conveniently near my home in Perak. Although my journey began in Penang, where I was born, I moved to Perak at the age of three, and it has been my home ever since.</p>
+            <p>Over the past 20 years, life has been a blend of both joyful and challenging moments, but I firmly believe in embracing every experience with resilience. As the eldest of four siblings, all still pursuing their studies, I deeply wish them every success and fulfillment in their own paths.</p>
+            <p>A heartfelt thank you to my parents, whose steadfast support and wisdom continually inspire me. Their encouragement has been my compass, guiding me forward.</p>
+        </div>
+
+        <!-- Details Section -->
+        <div id="details" class="section">
+            <i><h2>Details</h2></i>
+            <table class="details">
+                <tr>
+                    <th>Name</th>
+                    <td>NURALLISYA SYAFIQAH BT AZRIE</td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>FEMALE</td>
+                </tr>
+                <tr>
+                    <th>Race</th>
+                    <td>MALAY</td>
+                </tr>
+                <tr>
+                    <th>Hobbies</th>
+                    <td>LISTENING TO MUSIC</td>
+                </tr>
+                <tr>
+                    <th>Ambition</th>
+                    <td>FORENSIC EXPERT</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Favorites Section -->
+        <div id="favorites" class="section">
+            <i><h3>Favorite Songs</h3></i>
+            <ul>
+                <li>Just Give Me Reason</li>
+                <li>Love Me Like You Do</li>
+                <li>Golden Hour</li>
+            </ul>
+            <i><h4>Favorite Movies</h4></i>
+            <ul>
+                <li>Skyscraper</li>
+                <li>Any Horror Stories</li>
+                <li>San Andreas</li>
+            </ul>
+            <i><h5>Favorite Youtuber</h5></i>
+            <ul>
+                <li><a href="https://www.youtube.com/@TheAlieffIrfan">Alieff Irfan Channels</a></li>
+                <li><a href="https://www.youtube.com/@IsaIsarb">Isa Isarb Channels</a></li>
+            </ul>
+        </div>
+
+        <!-- New Section for Favorite Food and Drinks -->
+        <div id="food-and-drinks" class="section">
+            <i><h3>Favorite Food</h3></i>
+            <ol>
+                <li>Nasi Lemak</li>
+                <li>Roti Canai</li>
+                <li>Nasi Ayam</li>
+            </ol>
+
+            <i><h4>Favorite Drinks</h4></i>
+            <ol>
+                <li>Mineral Water</li>
+                <li>Neslo Ice</li>
+                <li>Fruit Juices</li>
+            </ol>
+<i><h5>My Social Media</h5></i>
+            <ul>
+                <li><a href="https://wa.link/w6gd3m">WhatsApp Link</a></li>
+                <li><a href="https://www.instagram.com/alsyfqah/">Instagram Link</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/IMG_20230423_181826_773.jpg" alt="Image 1">
+        <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/IMG-20241029-WA0020.jpg" alt="Image 2">
+        <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/IMG-20240908-WA0121.jpg" alt="Image 3">
+        <img src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/IMG_20241112_182835_029.jpg" alt="Image 4">
+    </div>
+
+    <footer>&copy; IMD318 ASSIGNMENT 2024</footer>
+</body>
+</html>

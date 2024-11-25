@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Allisya's Blog </title>
+    <style>
+        body {
+            background-image: url("file:///C:/Users/Nurallisya%20Syafiqah/Downloads/eucalyptus-leaf-pattern-pink-background-vector_53876-175965.avif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: black;
+            font-family: serif;
+        }
+
+        a {
+            color: black; 
+            text-decoration: none;
+            padding: 0 10px; 
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .digital-clock {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Audio hidden */
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <br><h1 class="title">WELCOME TO MY HOMEPAGE</h1>
+        <div id="clock" class="digital-clock"></div>
+    </center>
+    <br><hr>
+
+    <!-- Marquee -->
+    <marquee>HYE MR KADER, ENJOY YOUR WATCHING AND GIVE ME A BEST MARK THANK YOU !</marquee>
+    <br><br>
+
+    <table>
+        <tr>
+            <td><a href="index.html">HOME</a></td>
+            <td><a href="biodata.html">BIODATA</a></td>
+            <td><a href="experience.html">EXPERIENCE</a></td>
+            <td><a href="education.html">EDUCATION</a></td>
+            <td><a href="family.html">FAMILY</a></td>
+            <td><a href="gallery.html">GALLERY</a></td>
+            <td><a href="dreamplace.html">DREAM PLACE</a></td>
+        </tr>
+    </table>
+
+    <br>
+    <center>
+        <div id="introduction" class="section">
+            <p>Hi everyone, nice to meet you. You can call me Allisya and I want to share that this is my first website I succeeded in IMD318 assignment. So, in this website I have to complete tasks such as sharing a little bit about my life using notepad or any text-based authoring tool only.</p>
+        </div>
+        <br><br><hr>
+        <p>If you'd like to contact me, feel free to email me at 
+            <br>
+            <p><a href="mailto:2022627208@student.uitm.edu.my">NURALLISYA'S ASSIGNMENT</a></p>
+        </p>
+        <footer>&copy; IMD318 ASSIGNMENT 2024</footer>
+    </center>
+
+    <Auto-playing audio>
+    <audio autoplay>
+        <source src="file:///C:/Users/Nurallisya%20Syafiqah/Downloads/relaxing-piano-music-248868.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JavaScript for real-time digital clock -->
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000); // Update clock every second
+        updateClock(); // Initialize clock on page load
+    </script>
+</body>
+</html>
